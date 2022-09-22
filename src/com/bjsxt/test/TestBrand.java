@@ -23,6 +23,7 @@ public class TestBrand extends JFrame{
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 
+
     }
 
     @Override
@@ -31,7 +32,9 @@ public class TestBrand extends JFrame{
 
         g.drawImage(brand1.getImage(),0,100,null);
         g.drawImage(brand2.getImage(),50,100,null);
-        g.drawImage(brand3.getImage(),100,100,null);
+        g.drawImage(brand3.getGrayImage(),100,100,null);
+
+
     }
 
 

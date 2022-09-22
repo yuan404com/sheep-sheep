@@ -18,16 +18,16 @@ import java.awt.*;
 public class Cell {
 
 
-    private Integer state;    //     1   空   没有牌     2  有牌
+    private Integer state=1;    //     1   空   没有牌     2  有牌
 
-    private Boolean isGray;    //  是否置灰
+    private Boolean isGray=false;    //  是否置灰
 
-    private Brand brand;       // 图案
-
-
-    public Cell() {
+    private Brand brand=null;       // 图案
 
 
+    public Cell(Brand brand) {
+        this.brand = brand;
+        this.state =2 ;
     }
 
     public Integer getState() {

@@ -22,14 +22,29 @@ public class Layer {
     private  Integer  cellNumy;     //  本图层中竖向有多少个单元格    2
 
 
-    private  Cell [][]   cells =new  Cell[cellNumy][cellNumx];
+    private  Cell [][]   cells =null;
 
-    private  Integer  size;   //  当前图层有多少组件    如果为0  说明当前图片没有组件, 都被消除完毕啦. 可以从map当中删除掉.
+    private  Integer  capacity ;    // 容量
+
+    private  Integer  size=0;   //  当前图层有多少组件    如果为0  说明当前图片没有组件, 都被消除完毕啦. 可以从map当中删除掉.
 
 
-    public Layer() {
+    public Layer(Integer cellNumx, Integer cellNumy) {
+        this.cellNumx = cellNumx;
+        this.cellNumy = cellNumy;
+
+        this.capacity = this.cellNumx*this.cellNumy;
+        this.cells =new  Cell[cellNumy][cellNumx];
+
     }
 
+    public Integer getCapacity() {
+        return capacity;
+    }
+
+    public void setCapacity(Integer capacity) {
+        this.capacity = capacity;
+    }
 
     public Integer getOffset() {
         return offset;
@@ -86,4 +101,17 @@ public class Layer {
     public void setSize(Integer size) {
         this.size = size;
     }
+
+
+    public void  show(){
+        if(cells==null) return;
+
+        for (int i = 0; i < cells.length; i++) {
+            for (int j = 0; j < cells[i].length; j++) {
+                System.out.print(cells[i][j].getBrand().getName());
+            }
+            System.out.println();
+        }
+    }
+
 }

@@ -2,7 +2,7 @@ package com.bjsxt.model;
 
 
 /*
-    对于游戏当中  图案的抽象。  比如 胡萝卜，玉米， 青草，
+    对于游戏当中  牌 的抽象。  比如 胡萝卜，玉米， 青草，
 
 
  */
@@ -33,6 +33,14 @@ public class Brand {
         this.image = ImageUtil.get(name+".png");
         this.grayImage = ImageUtil.get(name+"_gray.png");
 
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public Integer getWidth() {

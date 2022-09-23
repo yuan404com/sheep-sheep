@@ -30,10 +30,10 @@ public class TestHuidu {
     }
 
     public static void main(String[] args) throws IOException {
-        grayImage(4,"D:\\111.png", "D:\\123.png");//最大值法灰度化
-//        grayImage(2,"D:\\111.png", "2.jpg");//最小值法灰度化
-//        grayImage(3,"D:\\111.png", "3.jpg");//平均值法灰度化
-//        grayImage(4,"D:\\111.png", "4.jpg");//加权法灰度化
+        grayImage(4,"C:\\Users\\anmin\\Desktop\\sheep\\imgs\\白菜.png", "C:\\Users\\anmin\\Desktop\\白菜_gray.png");//最大值法灰度化
+//         grayImage(2,"C:\\Users\\anmin\\Desktop\\sheep\\imgs\\刷子.png", "C:\\Users\\anmin\\Desktop\\sheep\\imgs\\刷子_gray.png");//最小值法灰度化
+//         grayImage(3,"C:\\Users\\anmin\\Desktop\\sheep\\imgs\\刷子.png", "C:\\Users\\anmin\\Desktop\\sheep\\imgs\\刷子_gray.png");//平均值法灰度化
+//         grayImage(4,"C:\\Users\\anmin\\Desktop\\sheep\\imgs\\刷子.png", "C:\\Users\\anmin\\Desktop\\sheep\\imgs\\刷子_gray.png");//加权法灰度化
     }
 
 

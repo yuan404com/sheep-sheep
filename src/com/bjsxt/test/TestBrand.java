@@ -1,6 +1,7 @@
 package com.bjsxt.test;
 
 import com.bjsxt.model.Brand;
+import com.bjsxt.util.GameUtil;
 
 import javax.swing.*;
 import java.awt.*;
@@ -28,6 +29,8 @@ public class TestBrand extends JFrame{
     @Override
     public void paint(Graphics g) {
 
+        g.drawImage(GameUtil.bg_img,0,0,450,800,null);
+        g.drawImage(GameUtil.xcqu_img,11,600,null);
 
         g.drawImage(brand1.getImage(),0,100,null);
         g.drawImage(brand2.getImage(),50,100,null);

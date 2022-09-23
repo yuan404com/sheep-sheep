@@ -22,7 +22,7 @@ public class Cell {
 
     private Boolean isGray=false;    //  是否置灰
 
-    private Brand brand=null;       // 图案
+    private Brand brand=null;       // 牌
 
 
     public Cell(Brand brand) {

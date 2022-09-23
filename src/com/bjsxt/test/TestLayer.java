@@ -12,14 +12,14 @@ public class TestLayer {
 
     public static void main(String[] args) {
 
-        Layer layer =new Layer(6,6);
+        Layer layer =new Layer(9,9);
 //
         Cell[][]  cells = layer.getCells();
 
         //  下一步  要把 9个 brand 牌  放入到  cells 数组中。
         Brand[]   brands =new Brand[layer.getCapacity()];
 
-        //  1  从牌的种类当中随机去除一个 牌名
+        //  1  从牌的种类当中随机取一个 牌名
         String[]   brandNames= {"玉米","胡萝卜","青草","剪刀","手套","刷子","毛线","奶瓶"};
 
         //  2  根据 随机去到的 牌名 创建3个 相同的牌对象

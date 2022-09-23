@@ -10,15 +10,16 @@ package com.bjsxt.model;
 
 import com.bjsxt.util.ImageUtil;
 
+import javax.swing.*;
 import java.awt.*;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseMotionAdapter;
 
-public class Brand {
+public class Brand extends JComponent{
 
     private  String  name;          // 对当前的图案进行命名  可以用来定位  图片的文件
     private  Integer  type;
-
-    private  Integer  width=50;
-    private  Integer  heigth=50;
 
     private Image   image;
 
@@ -33,7 +34,28 @@ public class Brand {
         this.image = ImageUtil.get(name+".png");
         this.grayImage = ImageUtil.get(name+"_gray.png");
 
+
+        this.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+
+                Brand  brand = (Brand) e.getSource();
+                System.out.println(brand.getName()+"被点击啦.....");
+
+            }
+        });
+
+
     }
+
+    @Override
+    public void paint(Graphics g) {
+        super.paint(g);
+        g.drawImage(this.getImage(),this.getX(),this.getY(),null);
+
+    }
+
+
 
     public String getName() {
         return name;
@@ -43,21 +65,7 @@ public class Brand {
         this.name = name;
     }
 
-    public Integer getWidth() {
-        return width;
-    }
 
-    public void setWidth(Integer width) {
-        this.width = width;
-    }
-
-    public Integer getHeigth() {
-        return heigth;
-    }
-
-    public void setHeigth(Integer heigth) {
-        this.heigth = heigth;
-    }
 
     public Image getImage() {
         return image;

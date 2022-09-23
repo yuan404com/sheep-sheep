@@ -11,6 +11,7 @@ public class TestBrand extends JFrame{
     private Integer  height =800;
 
     private Brand  brand1 =new Brand("胡萝卜");
+    private Brand  brand11 =new Brand("胡萝卜");
     private Brand  brand2 =new Brand("玉米");
 
     private Brand  brand3 =new Brand("青草");
@@ -34,11 +35,16 @@ public class TestBrand extends JFrame{
 //        panel.add(label);
 
         brand1.setBounds(100,100,50,50);
+
         this.getContentPane().add(brand1);
 
         brand2.setBounds(80,80,50,50);
+        brand2.setGray(true);
         this.getContentPane().add(brand2);
 
+        brand11.setBounds(70,70,50,50);
+        brand11.setGray(true);
+        this.getContentPane().add(brand11);
 
         this.setVisible(true);
     }

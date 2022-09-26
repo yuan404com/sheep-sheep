@@ -35,7 +35,6 @@ public class TestBrand extends JFrame{
 //        panel.add(label);
 
         brand1.setBounds(100,100,50,50);
-
         this.getContentPane().add(brand1);
 
         brand2.setBounds(80,80,50,50);

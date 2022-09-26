@@ -20,7 +20,6 @@ public class Cell {
 
     private Integer state=1;    //     1   空   没有牌     2  有牌
 
-    private Boolean isGray=false;    //  是否置灰
 
     private Brand brand=null;       // 牌
 
@@ -38,13 +37,6 @@ public class Cell {
         this.state = state;
     }
 
-    public Boolean getGray() {
-        return isGray;
-    }
-
-    public void setGray(Boolean gray) {
-        isGray = gray;
-    }
 
     public Brand getBrand() {
         return brand;

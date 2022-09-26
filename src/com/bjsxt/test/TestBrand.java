@@ -1,6 +1,7 @@
 package com.bjsxt.test;
 
 import com.bjsxt.model.Brand;
+import com.bjsxt.util.GameUtil;
 
 import javax.swing.*;
 import java.awt.*;
@@ -44,6 +45,8 @@ public class TestBrand extends JFrame{
         brand11.setBounds(70,70,50,50);
         brand11.setGray(true);
         this.getContentPane().add(brand11);
+//        g.drawImage(GameUtil.bg_img,0,0,450,800,null);
+//        g.drawImage(GameUtil.xcqu_img,11,600,null);
 
         this.setVisible(true);
     }

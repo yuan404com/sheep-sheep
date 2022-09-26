@@ -64,8 +64,7 @@ public class ImageColor {
     }
 
     public static void main(String[] args) throws IOException {
-        inverse("D:\\user01\\images\\胡萝卜.png","D:\\user01\\images\\胡萝卜_gray.png");
-        inverse("D:\\user01\\images\\玉米.png","D:\\user01\\images\\玉米_gray.png");
-        inverse("D:\\user01\\images\\青草.png","D:\\user01\\images\\青草_gray.png");
+        inverse("C:\\Users\\anmin\\Desktop\\sheep\\imgs\\火.png", "C:\\Users\\anmin\\Desktop\\sheep\\imgs\\火_gray.png");
+
     }
 }

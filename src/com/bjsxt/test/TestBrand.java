@@ -70,7 +70,7 @@ public class TestBrand extends JFrame{
         this.getContentPane().add(brand3);
 
 
-        brand00.setBounds(0,600,450,800);
+        brand00.setBounds(0,575,450,800);
         this.getContentPane().add(brand00);
 
         brand0.setBounds(0,0,450,800);

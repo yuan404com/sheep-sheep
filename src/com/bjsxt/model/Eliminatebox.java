@@ -71,7 +71,6 @@ public class Eliminatebox extends JPanel {
                 }
             }
             paint();
-
             if (slot.size()==7){
                 System.out.println("over");
             }
@@ -89,7 +88,7 @@ public class Eliminatebox extends JPanel {
 
             Brand brand = slot.get(i);
 //            System.out.println(brand.getName()+"----"+slot.size()+"-------列表的长度");
-            int x = step+i*brand.getWidth()+5/2;
+            int x = step+i*brand.getWidth()+5/2+10;
             brand.setBounds(x,600,50,50);
 
         }

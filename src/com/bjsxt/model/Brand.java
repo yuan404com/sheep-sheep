@@ -52,7 +52,7 @@ public class Brand extends Component{
             public void mouseClicked(MouseEvent e) {
 
                 Brand  brand = (Brand) e.getSource();
-                if(brand.getGray()||brand.getName().equals("消除区域")){
+                if(brand.getGray()||brand.getName().equals("消除区域")||brand.getName().equals("背景草地")){
 
                     return;
                 }else{
@@ -84,11 +84,6 @@ public class Brand extends Component{
         }else{
 
             g.drawImage(this.getImage(),x,y,null);
-
-
-
-
-
 
         }
 

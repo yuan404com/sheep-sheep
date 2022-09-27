@@ -2,23 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1084314e-ae2d-43e7-8193-41b6786f9aac" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/bjsxt/model/Eliminatebox.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/羊了个羊/com/bjsxt/model/Brand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/羊了个羊/com/bjsxt/model/Cell.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/羊了个羊/com/bjsxt/model/Layer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/羊了个羊/com/bjsxt/model/Level.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/羊了个羊/com/bjsxt/model/Map.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/羊了个羊/com/bjsxt/test/TestBrand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/羊了个羊/com/bjsxt/test/TestMap.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/羊了个羊/com/bjsxt/util/GameUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/羊了个羊/com/bjsxt/util/ImageColor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/羊了个羊/com/bjsxt/util/ImageUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/羊了个羊/com/bjsxt/util/TestHuidu.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/bjsxt/model/Brand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bjsxt/model/Brand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/bjsxt/model/Level.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bjsxt/model/Level.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/bjsxt/model/Eliminatebox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bjsxt/model/Eliminatebox.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/bjsxt/test/TestBrand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bjsxt/test/TestBrand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/bjsxt/util/GameUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bjsxt/util/GameUtil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,8 +144,16 @@
       <workItem from="1663918429795" duration="354000" />
       <workItem from="1664154072243" duration="20634000" />
       <workItem from="1664182668820" duration="5397000" />
-      <workItem from="1664240416019" duration="30712000" />
+      <workItem from="1664240416019" duration="32090000" />
     </task>
+    <task id="LOCAL-00001" summary="消除区域">
+      <created>1664278846858</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1664278846858</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,5 +170,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="消除区域" />
+    <option name="LAST_COMMIT_MESSAGE" value="消除区域" />
   </component>
 </project>

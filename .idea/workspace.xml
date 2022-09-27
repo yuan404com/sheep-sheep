@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1084314e-ae2d-43e7-8193-41b6786f9aac" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Music/music.mav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/jl-1.0.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/bjsxt/model/Music.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/bjsxt/model/Brand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bjsxt/model/Brand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/bjsxt/model/Eliminatebox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bjsxt/model/Eliminatebox.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/bjsxt/test/TestBrand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bjsxt/test/TestBrand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/羊了个羊.iml" beforeDir="false" afterPath="$PROJECT_DIR$/羊了个羊.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,13 +47,19 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Music" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\anmin\Desktop\sheep\Music" />
+      <recent name="C:\Users\anmin\Desktop\sheep\lib" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\anmin\Desktop\sheep\Music" />
       <recent name="C:\Users\anmin\Desktop\sheep\imgs" />
     </key>
   </component>
@@ -144,7 +152,7 @@
       <workItem from="1663918429795" duration="354000" />
       <workItem from="1664154072243" duration="20634000" />
       <workItem from="1664182668820" duration="5397000" />
-      <workItem from="1664240416019" duration="32090000" />
+      <workItem from="1664240416019" duration="33785000" />
     </task>
     <task id="LOCAL-00001" summary="消除区域">
       <created>1664278846858</created>
@@ -153,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664278846858</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="图片对齐">
+      <created>1664280107555</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1664280107555</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -173,6 +188,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="消除区域" />
-    <option name="LAST_COMMIT_MESSAGE" value="消除区域" />
+    <MESSAGE value="图片对齐" />
+    <option name="LAST_COMMIT_MESSAGE" value="图片对齐" />
   </component>
 </project>

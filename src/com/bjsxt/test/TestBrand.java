@@ -2,11 +2,14 @@ package com.bjsxt.test;
 
 import com.bjsxt.model.Brand;
 import com.bjsxt.model.Eliminatebox;
+import com.bjsxt.model.Music;
+import javazoom.jl.decoder.JavaLayerException;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.io.FileNotFoundException;
 
 public class TestBrand extends JFrame{
 
@@ -97,17 +100,18 @@ public class TestBrand extends JFrame{
                         e.printStackTrace();
                     }
                     repaint();
+
                 }
             }
         }).start();
 
-
-
-
-
-
-
-
+        try {
+            new Music();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (JavaLayerException e) {
+            e.printStackTrace();
+        }
 
     }
 

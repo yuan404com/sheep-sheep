@@ -57,6 +57,7 @@ public class Level {
     }
 
     public Integer getEliminateboxSize() {
+        eliminateboxSize = 7;
         return eliminateboxSize;
     }
 

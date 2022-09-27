@@ -16,7 +16,7 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionAdapter;
 
-public class Brand extends JComponent{
+public class Brand extends Component{
 
     private  String  name;          // 对当前的图案进行命名  可以用来定位  图片的文件
     private  Integer  id;
@@ -30,6 +30,12 @@ public class Brand extends JComponent{
 
 
     private Boolean isGray=false;    //  是否置灰
+
+
+
+
+
+
 
 
     public Brand() {
@@ -46,12 +52,18 @@ public class Brand extends JComponent{
             public void mouseClicked(MouseEvent e) {
 
                 Brand  brand = (Brand) e.getSource();
-                if(brand.getGray()){
+                if(brand.getGray()||brand.getName().equals("消除区域")){
 
                     return;
                 }else{
 
+
                    System.out.println(brand.getName()+"被点击啦.....");
+
+                    eliminatebox.addSlot(brand);
+//
+
+
                 }
 
             }
@@ -60,14 +72,24 @@ public class Brand extends JComponent{
 
     }
 
+    Eliminatebox eliminatebox  =new Eliminatebox();
+
     @Override
     public void paint(Graphics g) {
 //        super.paint(g);
-        System.out.println("brand....");
+
         if(isGray){
             g.drawImage(this.getGrayImage(),x,y,null);
+
         }else{
+
             g.drawImage(this.getImage(),x,y,null);
+
+
+
+
+
+
         }
 
 
@@ -107,4 +129,6 @@ public class Brand extends JComponent{
     public void setGrayImage(Image grayImage) {
         this.grayImage = grayImage;
     }
+
+
 }

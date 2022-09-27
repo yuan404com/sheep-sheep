@@ -18,7 +18,9 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionAdapter;
 import java.util.UUID;
 
-public class Brand extends Component   {
+
+public class Brand extends Component{
+
 
     private  String  name;          // 对当前的图案进行命名  可以用来定位  图片的文件
     private  String  id;
@@ -38,6 +40,12 @@ public class Brand extends Component   {
     private Cell   cell;
 
 
+
+
+
+
+
+
     public Brand() {
     }
 
@@ -55,21 +63,20 @@ public class Brand extends Component   {
             public void mouseClicked(MouseEvent e) {
 
                 Brand  brand = (Brand) e.getSource();
-                if(brand.getGray()){
+                if(brand.getGray()||brand.getName().equals("消除区域")||brand.getName().equals("背景草地")){
 
                     return;
                 }else{
-
-                   System.out.println(brand.id+brand.getName()+"被点击啦.....");
-//                   brand.setGray(true);
-
-                    brand.getParent().remove(brand);
+                    System.out.println(brand.getName()+"被点击啦.....");
 
                     self.getCell().setState(1);
                     self.getCell().setBrand(null);
                     self.setCell(null);
 
                     TestRenderMap.map.grayDecide();
+
+                    eliminatebox.addSlot(brand);
+
 
                 }
 
@@ -79,14 +86,19 @@ public class Brand extends Component   {
 
     }
 
+    Eliminatebox eliminatebox  =new Eliminatebox();
+
     @Override
     public void paint(Graphics g) {
 //        super.paint(g);
 
         if(isGray){
             g.drawImage(this.getGrayImage(),x,y,null);
+
         }else{
+
             g.drawImage(this.getImage(),x,y,null);
+
         }
 
 
@@ -134,4 +146,6 @@ public class Brand extends Component   {
     public void setGrayImage(Image grayImage) {
         this.grayImage = grayImage;
     }
+
+
 }

@@ -5,9 +5,19 @@
     <bookmark url="file://$PROJECT_DIR$/src/com/bjsxt/model/Brand.java" line="105" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="138802db-4a73-4260-bace-16e5cb2f4b81" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/com/bjsxt/model/Brand.java" afterPath="$PROJECT_DIR$/src/com/bjsxt/model/Brand.java" />
+=======
+    <list default="true" id="1084314e-ae2d-43e7-8193-41b6786f9aac" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Music/music.mav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/jl-1.0.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/bjsxt/model/Music.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/bjsxt/test/TestBrand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bjsxt/test/TestBrand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/羊了个羊.iml" beforeDir="false" afterPath="$PROJECT_DIR$/羊了个羊.iml" afterDir="false" />
+>>>>>>> feature-eliminatebox
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,11 +37,14 @@
       </list>
     </option>
   </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="feature-map" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="feature-map" />
       </map>
     </option>
     <favorite-branches>
@@ -89,6 +102,11 @@
     <option name="y" value="-8" />
     <option name="width" value="974" />
     <option name="height" value="1056" />
+  </component>
+  <component name="JsbtTreeLayoutManager">
+    <layout place="tools.popupGrunt">
+      <scroll-view-position x="0" y="0" />
+    </layout>
   </component>
   <component name="ProjectId" id="2F7UNebs3SgCwmaPc6y1JCZOEIX" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -149,13 +167,27 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Music" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+>>>>>>> feature-eliminatebox
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\anmin\Desktop\sheep\Music" />
+      <recent name="C:\Users\anmin\Desktop\sheep\lib" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\anmin\Desktop\sheep\Music" />
       <recent name="C:\Users\anmin\Desktop\sheep\imgs" />
     </key>
   </component>
+<<<<<<< HEAD
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -171,6 +203,13 @@
   <component name="RunManager" selected="Application.TestRenderMap">
     <configuration name="TestBrand" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" runner="idea">
+=======
+  <component name="RunManager" selected="Application.TestBrand">
+    <configuration name="ImageColor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.bjsxt.util.ImageColor" />
+      <module name="羊了个羊" />
+      <extension name="coverage">
+>>>>>>> feature-eliminatebox
         <pattern>
           <option name="PATTERN" value="com.bjsxt.test.*" />
           <option name="ENABLED" value="true" />
@@ -264,14 +303,19 @@
       <module name="羊了个羊" />
       <envs />
     </configuration>
+<<<<<<< HEAD
     <configuration default="true" type="ArquillianTestNG" factoryName="">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
+=======
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+>>>>>>> feature-eliminatebox
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
+<<<<<<< HEAD
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
@@ -296,6 +340,10 @@
       <properties />
       <listeners />
       <method>
+=======
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+>>>>>>> feature-eliminatebox
         <option name="Make" enabled="true" />
       </method>
     </configuration>
@@ -307,11 +355,20 @@
       <item index="4" class="java.lang.String" itemvalue="Application.TestLayer" />
     </list>
     <recent_temporary>
+<<<<<<< HEAD
       <list size="4">
         <item index="0" class="java.lang.String" itemvalue="Application.TestRenderMap" />
         <item index="1" class="java.lang.String" itemvalue="Application.TestLayer" />
         <item index="2" class="java.lang.String" itemvalue="Application.TestRenderLayer" />
         <item index="3" class="java.lang.String" itemvalue="Application.TestBrand" />
+=======
+      <list>
+        <item itemvalue="Application.TestBrand" />
+        <item itemvalue="Application.TestMap" />
+        <item itemvalue="Application.TestHuidu" />
+        <item itemvalue="Application.ImageColor" />
+        <item itemvalue="Application.TestBrand" />
+>>>>>>> feature-eliminatebox
       </list>
     </recent_temporary>
   </component>
@@ -328,6 +385,7 @@
       <created>1663581018163</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
+<<<<<<< HEAD
       <updated>1663581018163</updated>
       <workItem from="1663581021182" duration="4191000" />
       <workItem from="1663746611435" duration="49000" />
@@ -344,6 +402,33 @@
       <updated>1663834998790</updated>
     </task>
     <option name="localTasksCounter" value="2" />
+=======
+      <updated>1663842578121</updated>
+      <workItem from="1663842579283" duration="19000" />
+      <workItem from="1663894841054" duration="3470000" />
+      <workItem from="1663912827543" duration="2459000" />
+      <workItem from="1663915808302" duration="2557000" />
+      <workItem from="1663918429795" duration="354000" />
+      <workItem from="1664154072243" duration="20634000" />
+      <workItem from="1664182668820" duration="5397000" />
+      <workItem from="1664240416019" duration="33785000" />
+    </task>
+    <task id="LOCAL-00001" summary="消除区域">
+      <created>1664278846858</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1664278846858</updated>
+    </task>
+    <task id="LOCAL-00002" summary="图片对齐">
+      <created>1664280107555</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1664280107555</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+>>>>>>> feature-eliminatebox
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -801,5 +886,10 @@
         </state>
       </provider>
     </entry>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="消除区域" />
+    <MESSAGE value="图片对齐" />
+    <option name="LAST_COMMIT_MESSAGE" value="图片对齐" />
   </component>
 </project>

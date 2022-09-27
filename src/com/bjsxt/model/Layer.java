@@ -40,7 +40,8 @@ public class Layer {
         this.capacity = this.cellNumx*this.cellNumy;
         this.cells =new  Cell[cellNumx][cellNumy];
 
-        this.offset= new Random().nextInt(50);
+        // 偏移量设置
+        this.offset= new Random().nextInt(100);
 
     }
 

@@ -1,14 +1,11 @@
-package com.bjsxt.test;
+package com.bjsxt;
 
 import com.bjsxt.model.Brand;
-import com.bjsxt.model.Eliminatebox;
 import com.bjsxt.model.Music;
 import javazoom.jl.decoder.JavaLayerException;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
 import java.io.FileNotFoundException;
 
 public class TestBrand extends JFrame{
@@ -18,13 +15,13 @@ public class TestBrand extends JFrame{
     private Brand brand0 =new Brand("背景草地");
     private Brand brand00 = new Brand("消除区域");
 
-    private Brand  brand1 =new Brand("胡萝卜");
-    private Brand  brand11 =new Brand("胡萝卜");
-    private Brand  brand111 =new Brand("胡萝卜");
-    private Brand  brand1111 =new Brand("胡萝卜");
-    private Brand  brand2 =new Brand("玉米");
+    private Brand brand1 =new Brand("胡萝卜");
+    private Brand brand11 =new Brand("胡萝卜");
+    private Brand brand111 =new Brand("胡萝卜");
+    private Brand brand1111 =new Brand("胡萝卜");
+    private Brand brand2 =new Brand("玉米");
 
-    private Brand  brand3 =new Brand("青草");
+    private Brand brand3 =new Brand("青草");
 
 
 

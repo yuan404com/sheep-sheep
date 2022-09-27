@@ -8,14 +8,12 @@ package com.bjsxt.model;
  */
 
 
-import com.bjsxt.test.TestRenderMap;
+import com.bjsxt.TestRenderMap;
 import com.bjsxt.util.ImageUtil;
 
-import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.awt.event.MouseMotionAdapter;
 import java.util.UUID;
 
 
@@ -69,13 +67,17 @@ public class Brand extends Component{
                 }else{
                     System.out.println(brand.getName()+"被点击啦.....");
 
+//                    self.getParent().remove(self);
+
+
+                    eliminatebox.addSlot(brand);
+
+
                     self.getCell().setState(1);
                     self.getCell().setBrand(null);
                     self.setCell(null);
 
                     TestRenderMap.map.grayDecide();
-
-                    eliminatebox.addSlot(brand);
 
 
                 }

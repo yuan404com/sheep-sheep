@@ -1,10 +1,5 @@
 package com.bjsxt.model;
 
-import com.bjsxt.test.TestBrand;
-import com.bjsxt.util.GameUtil;
-
-import javax.swing.*;
-import java.awt.*;
 import java.awt.event.MouseListener;
 import java.util.*;
 import java.util.List;
@@ -14,7 +9,7 @@ import java.util.stream.Collectors;
 /**
  * 消除区域
  */
-public class Eliminatebox extends JPanel {
+public class Eliminatebox  {
 
 
     private Integer step = 5;
@@ -39,13 +34,9 @@ public class Eliminatebox extends JPanel {
 
     public void addSlot(Brand brand){
 
-        if (brand.getGray()){
-            return;
 
-        }else {
             slot.add(brand);
-            //选择图形删除
-            //brand.removeImage();
+
 
 
             MouseListener[] mouseListeners = brand.getMouseListeners();
@@ -71,11 +62,11 @@ public class Eliminatebox extends JPanel {
                 }
             }
             paint();
-            if (slot.size()==7){
+            if (slot.size()>=7){
                 System.out.println("over");
             }
 
-        }
+
     }
 
     //绘制到消除区域

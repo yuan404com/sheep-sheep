@@ -1,4 +1,6 @@
-package com.bjsxt.test;
+package com.bjsxt;
+
+
 
 
 import com.bjsxt.model.Brand;
@@ -24,7 +26,7 @@ public class TestLayer {
         注意：  两个参数的乘积 结果需要被3整除， 不然会出现异常。
 
      */
-    public static  Layer  buildLayer(int cellNumx, int cellnumy){
+    public static Layer buildLayer(int cellNumx, int cellnumy){
         Layer layer =new Layer(cellNumx,cellnumy);
 //
         Cell[][]  cells = layer.getCells();
@@ -43,11 +45,11 @@ public class TestLayer {
             int  rand =new  Random().nextInt(brandNames.length);
             String brandName=brandNames[rand];
 //            System.out.println(brandName);
-            Brand  brand1=new Brand(brandName);
+            Brand brand1=new Brand(brandName);
 
-            Brand  brand2=new Brand(brandName);
+            Brand brand2=new Brand(brandName);
 
-            Brand  brand3=new Brand(brandName);
+            Brand brand3=new Brand(brandName);
 
             brands[i]=brand1;
             brands[i+1]=brand2;
@@ -56,7 +58,7 @@ public class TestLayer {
 
         //   4   把一位数组当中的牌  打乱顺序
         for (int i = 0; i < brands.length; i++) {
-            Brand  brand = brands[i];
+            Brand brand = brands[i];
 
             int  rand =new  Random().nextInt(brands.length);
             brands[i]= brands[rand];
@@ -69,8 +71,8 @@ public class TestLayer {
         for (int i = 0; i < cells.length; i++) {
             for (int j = 0; j < cells[i].length; j++) {
 
-                Brand  brand =brands[count];
-                Cell  cell = new Cell(brand);
+                Brand brand =brands[count];
+                Cell cell = new Cell(brand);
                 brand.setCell(cell);
 
                 cells[i][j]=cell;
@@ -107,9 +109,9 @@ public class TestLayer {
             int  rand =new  Random().nextInt(brandNames.length);
             String brandName=brandNames[rand];
             System.out.println(brandName);
-            Brand  brand1=new Brand(brandName);
-            Brand  brand2=new Brand(brandName);
-            Brand  brand3=new Brand(brandName);
+            Brand brand1=new Brand(brandName);
+            Brand brand2=new Brand(brandName);
+            Brand brand3=new Brand(brandName);
 
             brands[i]=brand1;
             brands[i+1]=brand1;
@@ -123,7 +125,7 @@ public class TestLayer {
 
         //   4   把一位数组当中的牌  打乱顺序
         for (int i = 0; i < brands.length; i++) {
-            Brand  brand = brands[i];
+            Brand brand = brands[i];
 
             int  rand =new  Random().nextInt(brands.length);
             brands[i]= brands[rand];
@@ -151,7 +153,7 @@ public class TestLayer {
         System.out.println("------------------------");
 
         for (int i = 0; i < layer.getCapacity(); i++) {
-            Cell  cell= layer.getIndex(i);
+            Cell cell= layer.getIndex(i);
             System.out.print(cell.getBrand().getName());
 
         }

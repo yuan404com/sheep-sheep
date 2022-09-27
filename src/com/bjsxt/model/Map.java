@@ -16,6 +16,8 @@ import java.util.List;
 
 public class Map {
 
+
+
     private  Integer  x;  //绘制地图的左上角  x坐标
     private  Integer  y;  //绘制地图的左上角  y坐标
 
@@ -73,7 +75,7 @@ public class Map {
 
             for (int j = 0; j < layer.getCapacity(); j++) {
                 Cell  cell= layer.getIndex(j);
-                System.out.print(cell.getBrand().getName());
+
 
                 if(cell.getState()==2){
                     // 单元格当中有牌 才进行置灰判定
@@ -81,7 +83,11 @@ public class Map {
 
                     // 和上层的所有牌进行 交集判定
                    boolean flag= this.brand2layer(brand,layer.getParentLayer());
+
                     brand.setGray(flag);
+
+
+
                 }
 
             }

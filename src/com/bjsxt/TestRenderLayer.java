@@ -1,4 +1,5 @@
-package com.bjsxt.test;
+package com.bjsxt;
+
 
 import com.bjsxt.model.Brand;
 import com.bjsxt.model.Cell;

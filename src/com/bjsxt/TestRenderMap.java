@@ -1,4 +1,6 @@
-package com.bjsxt.test;
+package com.bjsxt;
+
+
 
 import com.bjsxt.model.Brand;
 import com.bjsxt.model.Cell;
@@ -15,7 +17,7 @@ public class TestRenderMap extends JFrame {
     private Integer  width = 450;
     private Integer  height =800;
 
-    public static Map map = TestMap.buildMap();
+    public  static  Map map = TestMap.buildMap();
 
 
     public TestRenderMap() throws HeadlessException {

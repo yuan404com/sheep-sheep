@@ -68,7 +68,13 @@ public class TestLayer {
 
         for (int i = 0; i < cells.length; i++) {
             for (int j = 0; j < cells[i].length; j++) {
-                cells[i][j]=new Cell(brands[count++]);
+
+                Brand  brand =brands[count];
+                Cell  cell = new Cell(brand);
+                brand.setCell(cell);
+
+                cells[i][j]=cell;
+                count++;
 
             }
         }

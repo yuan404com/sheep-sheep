@@ -15,7 +15,7 @@ public class TestRenderMap extends JFrame {
     private Integer  width = 450;
     private Integer  height =800;
 
-    private Map map = TestMap.buildMap();
+    public static Map map = TestMap.buildMap();
 
 
     public TestRenderMap() throws HeadlessException {
@@ -37,6 +37,7 @@ public class TestRenderMap extends JFrame {
         }
 
         map.grayDecide();  // 置灰判定
+
 
         new Thread(new Runnable() {
             @Override
@@ -77,8 +78,6 @@ public class TestRenderMap extends JFrame {
             }
         }
     }
-
-
 
 
     public static void main(String[] args) {

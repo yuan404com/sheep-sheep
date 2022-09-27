@@ -8,6 +8,7 @@ package com.bjsxt.model;
  */
 
 
+import com.bjsxt.test.TestRenderMap;
 import com.bjsxt.util.ImageUtil;
 
 import javax.swing.*;
@@ -33,6 +34,8 @@ public class Brand extends Component   {
 
 
     private Boolean isGray=false;    //  是否置灰
+
+    private Cell   cell;
 
 
     public Brand() {
@@ -60,6 +63,14 @@ public class Brand extends Component   {
                    System.out.println(brand.id+brand.getName()+"被点击啦.....");
 //                   brand.setGray(true);
 
+                    self.getParent().remove(self);
+
+                    self.getCell().setState(1);
+                    self.getCell().setBrand(null);
+                    self.setCell(null);
+
+                    TestRenderMap.map.grayDecide();
+
                 }
 
             }
@@ -82,8 +93,13 @@ public class Brand extends Component   {
     }
 
 
+    public Cell getCell() {
+        return cell;
+    }
 
-
+    public void setCell(Cell cell) {
+        this.cell = cell;
+    }
 
     public Boolean getGray() {
         return isGray;

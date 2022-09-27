@@ -11,6 +11,9 @@ package com.bjsxt.model;
  *
  */
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Map {
 
     private  Integer  x;  //绘制地图的左上角  x坐标
@@ -18,9 +21,7 @@ public class Map {
 
     private  Integer  floorHeight;   // 层高
 
-
-
-    private  Layer[]   layers ;      //  layers 的数组长度  和 层高是一致的。
+    private List<Layer> layers=new ArrayList<>();      //  layers 的数组长度  和 层高是一致的。
 
 
     public Map() {
@@ -51,11 +52,25 @@ public class Map {
         this.floorHeight = floorHeight;
     }
 
-    public Layer[] getLayers() {
+    public List<Layer> getLayers() {
         return layers;
     }
 
-    public void setLayers(Layer[] layers) {
+    public void setLayers(List<Layer> layers) {
         this.layers = layers;
     }
+
+
+    //  在map当中提供一个方法， 用来判定当前的 所有图案的 是否置灰
+    //  这个方法的调用时机    1  第一次 map 构建的时候     2   某一张牌移动的时候
+    public  void  grayDecide(){
+
+        // 第一层
+        for (int i = 1; i < this.getLayers().size(); i++) {
+
+        }
+    }
+
+
+
 }

@@ -10,9 +10,11 @@ package com.bjsxt.model;
 
  */
 
+import java.util.Random;
+
 public class Layer {
 
-    private  Integer  offset ;   // 偏移量
+    private  Integer  offset =10;   // 偏移量
 
     private  Integer  x;        // 通过偏移量计算后的  左上角x坐标
     private  Integer  y;        // 通过偏移量计算后的  左上角y坐标
@@ -35,6 +37,8 @@ public class Layer {
 
         this.capacity = this.cellNumx*this.cellNumy;
         this.cells =new  Cell[cellNumy][cellNumx];
+
+        this.offset= new Random().nextInt(50);
 
     }
 

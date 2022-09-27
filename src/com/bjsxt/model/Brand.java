@@ -15,14 +15,17 @@ import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionAdapter;
+import java.util.UUID;
 
-public class Brand extends JComponent{
+public class Brand extends Component{
 
     private  String  name;          // 对当前的图案进行命名  可以用来定位  图片的文件
-    private  Integer  id;
+    private  String  id;
 
     private  Integer x=0;
     private  Integer y=0;
+    private  int width=50;
+    private  int height=50;
 
     private Image   image;
 
@@ -40,6 +43,9 @@ public class Brand extends JComponent{
         this.image = ImageUtil.get(name+".png");
         this.grayImage = ImageUtil.get(name+"_gray.png");
 
+        this.id= UUID.randomUUID().toString();
+
+        Brand  self=this;
 
         this.addMouseListener(new MouseAdapter() {
             @Override
@@ -51,7 +57,9 @@ public class Brand extends JComponent{
                     return;
                 }else{
 
-                   System.out.println(brand.getName()+"被点击啦.....");
+                   System.out.println(brand.id+brand.getName()+"被点击啦.....");
+//                   brand.setGray(true);
+
                 }
 
             }
@@ -63,7 +71,7 @@ public class Brand extends JComponent{
     @Override
     public void paint(Graphics g) {
 //        super.paint(g);
-        System.out.println("brand....");
+
         if(isGray){
             g.drawImage(this.getGrayImage(),x,y,null);
         }else{

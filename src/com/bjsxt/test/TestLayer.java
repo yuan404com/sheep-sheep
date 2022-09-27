@@ -9,7 +9,14 @@ import java.util.Random;
 
 public class TestLayer {
 
-    public  static String[] brandNames={"玉米","胡萝卜","青草","剪刀","手套","刷子","毛线","奶瓶"};
+    public  static String[] brandNames={
+            "刷子","剪刀","叉子",
+            "手套","水桶","火",
+            "玉米","球","瓶子",
+            "白菜","稻草","肉腿",
+            "胡萝卜","苹果","苹果",
+            "铃铛","青草"
+    };
 
 
     /*
@@ -18,7 +25,7 @@ public class TestLayer {
 
      */
     public static  Layer  buildLayer(int cellNumx, int cellnumy){
-        Layer layer =new Layer(9,9);
+        Layer layer =new Layer(cellNumx,cellnumy);
 //
         Cell[][]  cells = layer.getCells();
 
@@ -35,14 +42,16 @@ public class TestLayer {
         for (int i = 0; i < brands.length; i=i+3) {
             int  rand =new  Random().nextInt(brandNames.length);
             String brandName=brandNames[rand];
-            System.out.println(brandName);
+//            System.out.println(brandName);
             Brand  brand1=new Brand(brandName);
+
             Brand  brand2=new Brand(brandName);
+
             Brand  brand3=new Brand(brandName);
 
             brands[i]=brand1;
-            brands[i+1]=brand1;
-            brands[i+2]=brand1;
+            brands[i+1]=brand2;
+            brands[i+2]=brand3;
         }
 
         //   4   把一位数组当中的牌  打乱顺序
@@ -65,6 +74,8 @@ public class TestLayer {
         }
 
         layer.setSize(count);
+
+        layer.show();
 
         return layer;
     }

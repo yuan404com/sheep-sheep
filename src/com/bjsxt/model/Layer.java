@@ -28,7 +28,9 @@ public class Layer {
 
     private  Integer  capacity ;    // 容量
 
-    private  Integer  size=0;   //  当前图层有多少组件    如果为0  说明当前图片没有组件, 都被消除完毕啦. 可以从map当中删除掉.
+    private  Integer  size=0;   //  当前图层有多少组件    如果为0  说明当前图片没有组件, 都被消除完毕啦. 可以从map当中删除掉.、
+
+    private  Layer   parentLayer;   // 上层图层
 
 
     public Layer(Integer cellNumx, Integer cellNumy) {
@@ -36,7 +38,7 @@ public class Layer {
         this.cellNumy = cellNumy;
 
         this.capacity = this.cellNumx*this.cellNumy;
-        this.cells =new  Cell[cellNumy][cellNumx];
+        this.cells =new  Cell[cellNumx][cellNumy];
 
         this.offset= new Random().nextInt(50);
 
@@ -106,6 +108,9 @@ public class Layer {
         this.size = size;
     }
 
+    public void setParentLayer(Layer parentLayer) {
+        this.parentLayer = parentLayer;
+    }
 
     public void  show(){
         if(cells==null) return;
@@ -118,4 +123,16 @@ public class Layer {
         }
     }
 
+    public Cell getIndex(int index){
+        int  index_x= index/this.getCellNumy();
+        int  index_y= index%this.getCellNumy();
+
+        return this.cells[index_x][index_y];
+
+    }
+
+
+    public Layer getParentLayer() {
+        return  this.parentLayer;
+    }
 }

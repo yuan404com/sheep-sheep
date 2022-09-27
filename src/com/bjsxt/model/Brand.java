@@ -17,7 +17,7 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionAdapter;
 import java.util.UUID;
 
-public class Brand extends Component{
+public class Brand extends Component   {
 
     private  String  name;          // 对当前的图案进行命名  可以用来定位  图片的文件
     private  String  id;
@@ -80,6 +80,9 @@ public class Brand extends Component{
 
 
     }
+
+
+
 
 
     public Boolean getGray() {

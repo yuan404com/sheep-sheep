@@ -84,7 +84,7 @@ public class TestLayer {
 
     public static void main(String[] args) {
 
-        Layer layer =new Layer(9,9);
+        Layer layer =new Layer(3,5);
 //
         Cell[][]  cells = layer.getCells();
 
@@ -140,9 +140,15 @@ public class TestLayer {
                 cells[i][j]=new Cell(brands[count++]);
             }
         }
-
+        layer.setSize(count);
         //   7  遍历 当前图层的 二维数据
-        layer.show();
+        System.out.println("------------------------");
+
+        for (int i = 0; i < layer.getCapacity(); i++) {
+            Cell  cell= layer.getIndex(i);
+            System.out.print(cell.getBrand().getName());
+
+        }
 
 
 

@@ -7,6 +7,7 @@ import com.bjsxt.model.Map;
 
 import javax.swing.*;
 import java.awt.*;
+import java.util.List;
 
 public class TestRenderMap extends JFrame {
 
@@ -30,11 +31,12 @@ public class TestRenderMap extends JFrame {
         this.setBounds(0,0,450,800);
         this.setLocationRelativeTo(null);
 
-
-        for (int i = 0; i < map.getLayers().size(); i++) {
-            renderLayer(this.getContentPane(),map.getLayers().get(i));
+        List<Layer>  list=map.getLayers();
+        for (int i = 0; i < list.size(); i++) {
+            renderLayer(this.getContentPane(),list.get(i));
         }
 
+        map.grayDecide();  // 置灰判定
 
         new Thread(new Runnable() {
             @Override

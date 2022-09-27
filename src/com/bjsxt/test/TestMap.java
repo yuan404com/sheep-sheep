@@ -17,7 +17,7 @@ public class TestMap {
         //  构建Map
 
         Map  map =new Map();
-            map.setFloorHeight(3);   // 层高为 两层
+            map.setFloorHeight(2);   // 层高为 两层
             map.setX(100);
             map.setY(200);           // 100，200 作为 map 绘制的左上角坐标。
 
@@ -26,11 +26,14 @@ public class TestMap {
         //  构建图层
         Layer  layer1= TestLayer.buildLayer(6,6);
         Layer  layer2= TestLayer.buildLayer(9,9);
-        Layer  layer3= TestLayer.buildLayer(3,7);
+//        Layer  layer3= TestLayer.buildLayer(3,7);
+//        Layer  layer4= TestLayer.buildLayer(9,5);
+
+        layer2.setParentLayer(layer1);
+        layer1.setParentLayer(null);
 
         map.getLayers().add(layer1);
         map.getLayers().add(layer2);
-        map.getLayers().add(layer3);
 
 
         return  map;

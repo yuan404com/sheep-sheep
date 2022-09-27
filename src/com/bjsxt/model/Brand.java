@@ -63,7 +63,7 @@ public class Brand extends Component   {
                    System.out.println(brand.id+brand.getName()+"被点击啦.....");
 //                   brand.setGray(true);
 
-                    self.getParent().remove(self);
+                    brand.getParent().remove(brand);
 
                     self.getCell().setState(1);
                     self.getCell().setBrand(null);

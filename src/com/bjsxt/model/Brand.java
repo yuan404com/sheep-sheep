@@ -8,6 +8,7 @@ package com.bjsxt.model;
  */
 
 
+import com.bjsxt.Start;
 import com.bjsxt.TestRenderMap;
 import com.bjsxt.util.ImageUtil;
 
@@ -77,7 +78,7 @@ public class Brand extends Component{
                     self.getCell().setBrand(null);
                     self.setCell(null);
 
-                    TestRenderMap.map.grayDecide();
+                    Start.map.grayDecide();
 
 
                 }
@@ -102,8 +103,6 @@ public class Brand extends Component{
             g.drawImage(this.getImage(),x,y,null);
 
         }
-
-
     }
 
 

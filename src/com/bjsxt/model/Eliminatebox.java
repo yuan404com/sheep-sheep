@@ -19,6 +19,10 @@ public class Eliminatebox  {
     private  static final List<Brand> slot = new ArrayList<>();
 
 
+    /**
+     * 清空集合
+     * @param name
+     */
     public void deleteByBrandName(String name){
        Iterator<Brand> iterator= slot.iterator();
         while(iterator.hasNext()){
@@ -63,7 +67,12 @@ public class Eliminatebox  {
             }
             paint();
             if (slot.size()>=7){
+                for (MouseListener mouseListener : mouseListeners) {
+                    brand.removeMouseListener(mouseListener);
+                }
+
                 System.out.println("over");
+                return;
             }
 
 

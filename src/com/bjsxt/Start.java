@@ -2,16 +2,15 @@ package com.bjsxt;
 
 
 
-import com.bjsxt.model.Brand;
-import com.bjsxt.model.Cell;
-import com.bjsxt.model.Layer;
-import com.bjsxt.model.Map;
+import com.bjsxt.model.*;
+import javazoom.jl.decoder.JavaLayerException;
 
 import javax.swing.*;
 import java.awt.*;
+import java.io.FileNotFoundException;
 import java.util.List;
 
-public class TestSxt extends JFrame {
+public class Start extends JFrame {
 
 
     private Integer  width = 450;
@@ -19,10 +18,37 @@ public class TestSxt extends JFrame {
 
     public  static  Map map = TestMap.buildMap();
 
+    private Brand bj =new Brand("背景草地");
+    private Brand xc = new Brand("消除区域");
 
-    public TestSxt() throws HeadlessException {
+    public Start() throws HeadlessException {
+
+        init();
+
+        renderMap();
+
+        xc.setBounds(0,575,450,800);
+        this.getContentPane().add(xc);
+
+        bj.setBounds(0,0,450,800);
+        this.getContentPane().add(bj);
+
+        refresh();
 
 
+//
+//        try {
+//            new Music();
+//        } catch (FileNotFoundException e) {
+//            e.printStackTrace();
+//        } catch (JavaLayerException e) {
+//            e.printStackTrace();
+//        }
+
+
+    }
+
+    public  void init(){
         this.setVisible(true);
         this.setSize(width,height);
         this.setTitle("羊了个羊");
@@ -32,7 +58,9 @@ public class TestSxt extends JFrame {
         this.setLayout(null);
         this.setBounds(0,0,450,800);
         this.setLocationRelativeTo(null);
+    }
 
+    public void renderMap(){
         List<Layer>  list=map.getLayers();
         for (int i = 0; i < list.size(); i++) {
             renderLayer(this.getContentPane(),list.get(i));
@@ -40,28 +68,8 @@ public class TestSxt extends JFrame {
 
         map.grayDecide();  // 置灰判定
 
-
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-
-                while (true){
-                    try {
-                        Thread.sleep(30);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
-
-                    repaint();
-                }
-
-            }
-        }).start();
-
-
-
-
     }
+
 
     private void  renderLayer(Container container, Layer layer){
         Cell[][] cells=layer.getCells();
@@ -81,8 +89,27 @@ public class TestSxt extends JFrame {
         }
     }
 
+    public void refresh(){
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+
+                while (true){
+                    try {
+                        Thread.sleep(30);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+
+                    repaint();
+                }
+
+            }
+        }).start();
+    }
+
 
     public static void main(String[] args) {
-        new TestSxt();
+        new Start();
     }
 }

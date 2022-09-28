@@ -17,6 +17,7 @@ public class Music {
         String str = System.getProperty("user.dir") + "/Music/music.mp3";
         BufferedInputStream name = new BufferedInputStream(new FileInputStream(str));
         player = new Player(name);
+
         player.play();
     }
 }

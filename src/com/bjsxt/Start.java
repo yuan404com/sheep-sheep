@@ -27,6 +27,7 @@ public class Start extends JFrame {
 
         renderMap();
 
+        //消除区域和选择区域背景绘制
         xc.setBounds(0,575,450,800);
         this.getContentPane().add(xc);
 
@@ -36,18 +37,19 @@ public class Start extends JFrame {
         refresh();
 
 
-//
-//        try {
-//            new Music();
-//        } catch (FileNotFoundException e) {
-//            e.printStackTrace();
-//        } catch (JavaLayerException e) {
-//            e.printStackTrace();
-//        }
+
+        try {
+            new Music();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (JavaLayerException e) {
+            e.printStackTrace();
+        }
 
 
     }
 
+    //窗口绘制
     public  void init(){
         this.setVisible(true);
         this.setSize(width,height);

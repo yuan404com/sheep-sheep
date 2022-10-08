@@ -1,5 +1,8 @@
 package com.bjsxt.model;
 
+import com.bjsxt.Start;
+
+import javax.swing.*;
 import java.awt.event.MouseListener;
 import java.util.*;
 import java.util.List;
@@ -9,7 +12,7 @@ import java.util.stream.Collectors;
 /**
  * 消除区域
  */
-public class Eliminatebox  {
+public class Eliminatebox   {
 
 
     private Integer step = 5;
@@ -34,22 +37,31 @@ public class Eliminatebox  {
         }
     }
 
+    /**
+     * 鼠标无法点击已经点过的图片
+     * @param brand
+     */
+    private void noMouseListener(Brand brand){
+        MouseListener[] mouseListeners = brand.getMouseListeners();
+        //消除区域框里图形无法点击
+        if (mouseListeners!=null){
+            for (MouseListener mouseListener : mouseListeners) {
+                brand.removeMouseListener(mouseListener);
+            }
+        }
+    }
 
 
     public void addSlot(Brand brand){
 
 
+
+
             slot.add(brand);
 
 
+            noMouseListener(brand);
 
-            MouseListener[] mouseListeners = brand.getMouseListeners();
-            //消除区域框里图形无法点击
-            if (mouseListeners!=null){
-                for (MouseListener mouseListener : mouseListeners) {
-                    brand.removeMouseListener(mouseListener);
-                }
-            }
 
             //消除区域图形排序
             slot.sort(Comparator.comparing(Brand::getName));
@@ -59,30 +71,24 @@ public class Eliminatebox  {
 
             for (String key : keys) {
                 List<Brand> brands = map.get(key);
-                System.out.println(brands.size()+"key");
+                //System.out.println(brands.size()+"key");
                 if (brands.size() == 3) {
                     deleteByBrandName(key);
                     break;
                 }
             }
-            paint();
-            if (slot.size()>=7){
-                for (MouseListener mouseListener : mouseListeners) {
-                    brand.removeMouseListener(mouseListener);
-                }
+            //应该和执行顺序有关，必须放在绘制消除区域上方
+            over(brand);
 
-                System.out.println("over");
-                return;
-            }
+            paint();
+
+
 
 
     }
 
     //绘制到消除区域
     public void paint(){
-
-        System.out.println("Eliminatebox.paint");
-
 
         for (int i =0;i<slot.size();i++){
 
@@ -93,6 +99,17 @@ public class Eliminatebox  {
 
         }
 
+    }
+
+    /**
+     * 游戏结束
+     * @param brand
+     */
+    private void over(Brand brand){
+        if (slot.size()>=7){
+            JOptionPane.showMessageDialog(brand,"over");
+            System.exit(0);
+        }
     }
 
 

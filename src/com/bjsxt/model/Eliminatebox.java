@@ -24,6 +24,7 @@ public class Eliminatebox   {
 
     /**
      * 清空集合
+     * 使用迭代器清空集合
      * @param name
      */
     public void deleteByBrandName(String name){
@@ -77,12 +78,12 @@ public class Eliminatebox   {
                     break;
                 }
             }
-            //应该和执行顺序有关，必须放在绘制消除区域上方
-            over(brand);
+
+
 
             paint();
 
-
+        over(brand);
 
 
     }
@@ -111,7 +112,6 @@ public class Eliminatebox   {
             System.exit(0);
         }
     }
-
 
 
 }
